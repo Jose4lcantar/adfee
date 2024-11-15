@@ -4,55 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link rel="stylesheet" href="../css/styles.css"> <!-- Ruta al CSS, ajustada a la carpeta actual -->
+    <link rel="stylesheet" href="../css/styles.css">
     <style>
-        /* Reset de márgenes y padding */
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
-            overflow-x: hidden; /* Evita el desplazamiento horizontal */
+            overflow-x: hidden;
         }
 
-        /* Aplicamos box-sizing: border-box para todos los elementos */
         * {
-            box-sizing: border-box; /* Evita que el padding y border agranden los elementos */
+            box-sizing: border-box;
         }
 
         section {
-            margin: 40px auto; /* Ajusté el margen superior e inferior */
+            margin: 40px auto;
             padding: 40px;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 1200px; /* Tamaño ajustado para que coincida con el recuadro de la página de inicio y "Quiénes Somos" */
-            width: 100%; /* Asegura que el recuadro no se desplace */
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
         }
 
-        section h1 {
-            font-size: 2.5em;
-            text-align: center;
+        .texto-servicios {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
 
-        section p {
-            font-size: 1.2em;
+        .texto-servicios div {
+            width: 48%;
             text-align: justify;
-            line-height: 1.6;
-            margin-bottom: 15px;
         }
 
-        section .titulo {
-            font-weight: bold;
+        .texto-servicios p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .imagenes-servicios {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin-top: 20px;
+        }
+
+        .imagenes-servicios img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Justificar el párrafo introductorio */
+        section p.introduccion {
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado -->
     <header>
         <div class="logo">
-            <img src="../img/logo.png" alt="Logo de la empresa"> <!-- Ruta ajustada al directorio correcto -->
+            <img src="../img/logo.png" alt="Logo de la empresa">
         </div>
         <nav>
             <ul>
@@ -66,33 +86,42 @@
         </nav>
     </header>
 
-    <!-- Sección principal de Servicios -->
     <section>
-        <h1>Servicios que ofrece ADFE </h1> 
-        
-        <p>En nuestra empresa, nos especializamos en ofrecer soluciones personalizadas y de alta calidad para satisfacer las necesidades específicas de cada cliente. A través de la ingeniería de equipos automatizados, la programación de sistemas de control y la integración de tecnologías avanzadas, buscamos optimizar la eficiencia, productividad y seguridad en los procesos industriales. Descubre más sobre nuestros servicios y cómo podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
-        <p>• Diseño e ingeniería de equipos automatizados</p>
-        <p>• Diseño y fabricación de fixtures</p>
-        <p>• Diseño e ingeniería de sistemas de transferencia de producto</p>
-        <p>• Diseño y fabricación de celdas de manufactura</p>
-        <p>• Ingeniería en Automatización</p>
-        <p>• Programación de controladores lógicos PLC</p>
-        <p>• Programación de pantallas HMI</p>
-        <p>• Programación de robot</p>
-        <p>• Integración e instalación de gabinetes de control</p>
-        <p>• Transportadores cadena, rodillo, cadena articulada</p>
-        <p>• Perfilaría de aluminio extruído</p>
-        <p>• Mesas de trabajo y estructuras en perfil de aluminio</p>
-        <p>• Carros habilitadores a medida de su producto</p>
-        <p>• Escaleras para diversas aplicaciones</p>
-        <p>• Estructuras</p>
-        <p>• Maquinado Fresa, Torno, CNC</p>
-        <p>• Celdas de manufactura</p>
-        <p>• Líneas de ensamble</p>
-        <p>• Sistemas de rastreabilidad datamatrix</p>
+        <h1>Servicios que ofrece ADFE</h1>
+
+        <!-- Párrafo introductorio con texto justificado -->
+        <p class="introduccion">En nuestra empresa, nos especializamos en ofrecer soluciones personalizadas y de alta calidad para satisfacer las necesidades específicas de cada cliente. A través de la ingeniería de equipos automatizados, la programación de sistemas de control y la integración de tecnologías avanzadas, buscamos optimizar la eficiencia, productividad y seguridad en los procesos industriales. Descubre más sobre nuestros servicios y cómo podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
+
+        <div class="texto-servicios">
+            <div>
+                <p>• Diseño e ingeniería de equipos automatizados</p>
+                <p>• Diseño y fabricación de fixtures</p>
+                <p>• Diseño e ingeniería de sistemas de transferencia de producto</p>
+                <p>• Diseño y fabricación de celdas de manufactura</p>
+                <p>• Ingeniería en Automatización</p>
+                <p>• Programación de controladores lógicos PLC</p>
+                <p>• Programación de pantallas HMI</p>
+                <p>• Programación de robot</p>
+            </div>
+            <div>
+                <p>• Integración e instalación de gabinetes de control</p>
+                <p>• Transportadores cadena, rodillo, cadena articulada</p>
+                <p>• Perfilería de aluminio extruído</p>
+                <p>• Mesas de trabajo y estructuras en perfil de aluminio</p>
+                <p>• Carros habilitadores a medida de su producto</p>
+                <p>• Escaleras para diversas aplicaciones</p>
+                <p>• Maquinado Fresa, Torno, CNC</p>
+                <p>• Sistemas de rastreabilidad datamatrix</p>
+            </div>
+        </div>
+
+        <div class="imagenes-servicios">
+            <img src="../img/solid.png" alt="Servicio 1">
+            <img src="../img/o.png" alt="Servicio 2">
+            <img src="../img/u.png" alt="Servicio 3">
+        </div>
     </section>
 
-    <!-- Pie de página -->
     <footer>
         <p>© 2024 ADFE Automatización e Integración S.A. de C.V.</p>
     </footer>
